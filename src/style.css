@@ -1,1 +1,38 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: pink;
+}
+
+.col {
+  position: relative;
+}
+.card {
+  background-color: white;
+  width: 350px;
+  height: 500px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px grey;
+  top: 50%;
+  margin-top: 50px;
+}
+
+p.number {
+  font-size: 180px;
+  margin-top: 25%;
+}
+
+.symbol {
+  font-size: 6.25rem;
+  height: 0.1rem;
+}
+
+.symbol.up {
+  color: red;
+  width: 3.75rem;
+  margin-left: 15px;
+}
+
+.symbol.down {
+  color: red;
+  margin-right: 15px;
+}
