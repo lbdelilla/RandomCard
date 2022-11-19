@@ -44,3 +44,19 @@ h1 {
   color: aliceblue;
   text-shadow: 0.1em 0.1em #333;
 }
+.btn {
+  background-color: rgb(178, 4, 4);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  font-family: "Marhey", cursive;
+  padding: 5px;
+  border-width: 1px;
+  border-color: rgb(222, 131, 131);
+}
+
+.buttongrt {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}

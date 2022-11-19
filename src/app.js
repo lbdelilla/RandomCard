@@ -21,14 +21,19 @@ let upsymbol = document.querySelector(".up");
 let downsymbol = document.querySelector(".down");
 let number = document.querySelector(".number");
 
-window.onload = function() {
-  let pickSuit = suit[Math.floor(Math.random() * (suit.length - 1))];
-  let pickValue = value[Math.floor(Math.random() * (value.length - 1))];
-  upsymbol.innerHTML = pickSuit;
-  downsymbol.innerHTML = pickSuit;
-  number.innerHTML = pickValue;
+window.onload = () => {
+  function generateCard() {
+    let pickSuit = suit[Math.floor(Math.random() * (suit.length - 1))];
+    let pickValue = value[Math.floor(Math.random() * (value.length - 1))];
+    upsymbol.innerHTML = pickSuit;
+    downsymbol.innerHTML = pickSuit;
+    number.innerHTML = pickValue;
 
-  pickSuit === "♥" || pickSuit === "♦"
-    ? ((upsymbol.style.color = "red"), (downsymbol.style.color = "red"))
-    : ((upsymbol.style.color = "black"), (downsymbol.style.color = "black"));
+    pickSuit === "♥" || pickSuit === "♦"
+      ? ((upsymbol.style.color = "red"), (downsymbol.style.color = "red"))
+      : ((upsymbol.style.color = "black"), (downsymbol.style.color = "black"));
+  }
+  document.querySelector(".btn").addEventListener("click", function() {
+    generateCard();
+  });
 };
