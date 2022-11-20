@@ -36,4 +36,5 @@ window.onload = () => {
   document.querySelector(".btn").addEventListener("click", function() {
     generateCard();
   });
+  setInterval(generateCard, 10000);
 };
